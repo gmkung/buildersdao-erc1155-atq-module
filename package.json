@@ -1,5 +1,5 @@
 {
-  "name": "builders-dao-erc721-atq-module",
+  "name": "builders-dao-erc1155-atq-module",
   "version": "1.0.",
   "main": "main.mjs",
   "type": "module",

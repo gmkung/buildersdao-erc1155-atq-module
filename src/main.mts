@@ -18,27 +18,23 @@ interface GraphQLResponse {
 const SUBGRAPH_URLS: Record<string, { decentralized: string }> = {
   "1": {
     decentralized:
-      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmX4LAFvVTxaD5HwDH5ucXH5tQNuyxXQeNQtMd9C8TUeW9", // Ethereum deployment, by BuildersDAO
+      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmSh9t7NhTXGUJe6KZCzp2jV2Vz51ctPmg2vfdDPKzPUvH", // Ethereum ERC1155 deployment, by BuildersDAO
   },
   "137": {
     decentralized:
-      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmVHYtB5kaYnUyxQMaDymKhiJfvzDAJuBrVu6UM1mCxxZZ", // Polygon deployment, by BuildersDAO
+      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmdTo1njL1YGUzTb7zPjgYTkWHrUikF6tsyjhoTmDFSQBb", // Polygon ERC1155 deployment, by BuildersDAO
   },
   "42161": {
     decentralized:
-      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/Qmb7n6NVYNuEJLkXfM4DYX11VzjDVxrJXepzUY8tQUNfJX", // Arbitrum deployment, by BuildersDAO
+      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmT1T3wrEePV2eB4wBZjiB4upzwiqhAZixSj2ZaKGjM5Tw", // Arbitrum ERC1155 deployment, by BuildersDAO
   },
   "10": {
     decentralized:
-      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmQg9hksssr2qXJYj141r78KGEd3jci6V2JJz7BH7YFHYo", // Optimism deployment, by BuildersDAO
+      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmexMXUmZeTE8tK4CPnwJ9yqQMzgD7LfnrSXiGDPpoEXNa", // Optimism ERC1155 deployment, by BuildersDAO
   },
   "8453": {
     decentralized:
-      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmRPGbhADCD5CPreAnHqqFmRF8uVvLhhxGhEUdTcmE5RZD", // Base deployment, by BuildersDAO
-  },
-  "81457": {
-    decentralized:
-      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmbNuYHxQSyAVJro1ku4uHWQJaoom8ezKHpbkVFk1b7Sp3", // Blast deployment, by BuildersDAO
+      "https://gateway-arbitrum.network.thegraph.com/api/[api-key]/deployments/id/QmcvFcQsLnxWEt5ibiDpMcvH6dP6scrL2rG7aL9kKrAK9V", // Base ERC1155 deployment, by BuildersDAO
   },
 };
 
@@ -136,7 +132,7 @@ function transformPoolsToTags(
         "Public Name Tag": `${truncatedSymbolText} token`,
         "Project Name": collection.name,
         "UI/Website Link": ``,
-        "Public Note": `The contract for the ${collection.name} (${collection.symbol}) token.`,
+        "Public Note": `The ERC1155 contract for the ${collection.name} (${collection.symbol}) token.`,
       };
 
       acc.push(tag);
